@@ -27,6 +27,18 @@ PRODUCT_MODEL := SM6250
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
+# Lunch banner maintainer variable
+RISING_MAINTAINER="AbdoElbanaa"
+
+# Chipset/Maintainer properties (ro.rising.chipset/ro.rising.maintainer) 
+# Set RISING_MAINTAINER for version control 
+# (Optional if builder is setting properties via init_<device>.cpp)
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    RisingChipset="Snapdragon 720G" \
+    RisingMaintainer="AbdoElbanaa"
+
+RISING_MAINTAINER := AbdoElbanaa
+
 PRODUCT_BUILD_PROP_OVERRIDES += \
     BuildDesc="miatoll_global-user 12 SKQ1.211019.001 V14.0.3.0.SJZMIXM release-keys" \
     BuildFingerprint=Redmi/miatoll_global/miatoll:12/RKQ1.211019.001/V14.0.3.0.SJZMIXM:user/release-keys
